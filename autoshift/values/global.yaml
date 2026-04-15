@@ -8,7 +8,7 @@ autoshift:
   # When false, policies use their defined remediationAction
   dryRun: false
 
-autoshiftGitRepo: https://github.com/auto-shift/autoshiftv2.git
+autoshiftGitRepo: https://github.com/blediagolli/autoshiftv2.git
 autoshiftGitBranchTag: main
 
 # ArgoCD namespace — single source of truth for all policy charts
