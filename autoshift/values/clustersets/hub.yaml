@@ -141,7 +141,7 @@ hubClusterSets:
       master-kube-reserved-cpu: '500m'
       master-eviction-memory: '500Mi'
       ### Infrastructure Nodes
-      infra-nodes: '3'
+      infra-nodes: '0'
       infra-nodes-provider: aws
       infra-nodes-instance-type: 'm5.2xlarge'
       infra-nodes-numcpu: ''
@@ -205,7 +205,7 @@ hubClusterSets:
       local-storage-source: redhat-operators
       local-storage-source-namespace: openshift-marketplace
       ### OpenShift Data Foundation
-      odf: 'true'
+      odf: 'false'
       odf-subscription-name: odf-operator
       # odf-version: 'odf-operator.v4.18.11-rhodf'
       odf-multi-cloud-gateway: standard
