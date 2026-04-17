@@ -45,12 +45,12 @@ hubClusterSets:
       acm-source: redhat-operators
       acm-source-namespace: openshift-marketplace
       acm-availability-config: 'High'
-      acm-observability: 'true'
-      acm-search-storage: 'true'
+      acm-observability: 'false'
+      acm-search-storage: 'false'
       # acm-search-storage-class: 'ocs-storagecluster-ceph-rbd'
       # acm-search-storage-size: '100Gi'
       cluster-install: 'false'
-      acm-enable-provisioning: 'true'
+      acm-enable-provisioning: 'false'
       # acm-provisioning-storage-class: (optional)
       # acm-provisioning-database-size: 10Gi
       # acm-provisioning-filesystem-storage-size: 100Gi
@@ -73,21 +73,21 @@ hubClusterSets:
       acm-addon-gpf-cpu-request: '100m'
       acm-addon-gpf-mem-limit: '512Mi'
       ### Tempo
-      tempo: 'true'
+      tempo: 'false'
       tempo-subscription-name: tempo-product
       tempo-channel: stable
       tempo-source: redhat-operators
       tempo-source-namespace: openshift-marketplace
       # tempo-version: 'tempo-operator.v0.19.0-1'
       ### Kiali
-      kiali: 'true'
+      kiali: 'false'
       kiali-subscription-name: kiali-ossm
       kiali-channel: stable
       kiali-source: redhat-operators
       kiali-source-namespace: openshift-marketplace
       # kiali-version: 'kiali-operator.v2.17.2'
       ### Servicemesh3
-      servicemesh3: 'true'
+      servicemesh3: 'false'
       servicemesh3-subscription-name: servicemeshoperator3
       servicemesh3-channel: stable-3.2
       servicemesh3-source: redhat-operators
@@ -182,7 +182,7 @@ hubClusterSets:
       storage-nodes-memory-mib: ''
       storage-nodes-numcores-per-socket: ''
       ### Machine Health Checks
-      machine-health-checks: 'true'
+      machine-health-checks: 'false'
       machine-health-checks-worker: 'false'
       machine-health-checks-infra: 'false'
       machine-health-checks-storage: 'false'
